@@ -26,6 +26,23 @@
 
 		});
 
+		sr.reveal('#dos', {
+				duration: 1200,
+				origin: 'left',
+				distance: '-50px'
+
+
+		});
+
+		sr.reveal('#imagenray', {
+				duration: 1000,
+				origin: 'left',
+				distance: '-50px'
+
+
+		});
+
+
 
 
 
