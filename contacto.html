@@ -17,23 +17,28 @@
 
      <link href="imagenes/icono2.png" rel="icon">
 
-    <title>Portafolio</title>
+    <title>Sobre mi</title>
   </head>
+ 
 
-<style>
 
-html,body {
- 	height: 100%;
- 	overflow: hidden;
-	}
+  <body>
 
-	body{
-		height: 100%;
+    <style>
+
+      html,body {
+  height: 100%;
+  }
+
+  body{
+    height: 100%;
         background-image: url(imagenes/imagen2.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-	}
+  }
+
+ 
 
 
  #nab .nav-link:hover{
@@ -42,54 +47,42 @@ html,body {
              transition: all .5s;
 
     }
-
-    #ray{
-    	color: white; 
-    	font-family: fuente3; 
-    	font-size: 9rem;
+     #jom{
+      border: 1.2px solid rgba(255,255,255,0.8); 
+      padding-left: 20px;  
+      padding-right: 20px;
     }
 
-    #jom{
-    	border: 1.2px solid rgba(255,255,255,0.8); 
-    	padding-left: 20px;  
-    	padding-right: 20px;
-    }
+    #formulario{
 
-	#imagen{
-
-        height: 100%;
-        
-
-
-      }
-
-      #contenedor{
-      	background-color: transparent;
-      	position: absolute;
-  top: 50%;
+      font-family: fuente2;
+      top:50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-0%, -0%);
   z-index: 2;
   width: 80%;
   padding: 20px;
   text-align: center;
+    }
+
+    #formulario label{
+        font-size: 1.5rem;
+
       }
 
-      #pie{
-      		top:75%;
-      		position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
+    #formulario input{
+            color: #DED8D8;
+            background-color: transparent;
       }
 
-      #pie a{
-      	color: white;
-      	text-decoration: none;
+      #formulario textarea{
+          color: #DED8D8;
+            background-color: transparent;
       }
+
+    #dentro{
+      width: 75%;
+    }
 
         @font-face{
 
@@ -118,38 +111,40 @@ html,body {
 
     }
 
-
     @media only screen and (max-width: 992px) {
-  
-      #ray{
-      	font-size: 5rem;
-      }
-      
 
       #jom{
-      	border-width: 0px;
+        border-width: 0px;
       }
 
-      #pie{
-      		top:83%;
-      		
+      #formulario label{
+        font-size: 1.3rem;
+
       }
 
-        
+
+      #dentro{
+        width: 100%;
+      }
+
+      #ct{
+        font-size: 40px;
+      }
+
+     
+  
+     
+   
 
   }
+      
 
-</style>
-
- 
-
-  <body>
+    </style>
 
 
 
 
-
-<div class="container ">
+    <div class="container ">
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-none sticky-top " id="asd" > <!--sticky-top o fixed-top -->
@@ -165,10 +160,10 @@ html,body {
 
       <div class="navbar-nav me-md-0 p-md-4 text-center" id="nab" style=" font-family: fuente2; font-size: .9rem;">
 
-        <a id="jom" class="nav-link active me-md-5" aria-current="page" href="index.html" >HOME</a>
-        <a class="nav-link active me-md-5" aria-current="page" href="portafolio.html">PORTAFOLIO</a>
-        <a class="nav-link active me-md-5" aria-current="page" href="sobremi.html">SOBRE MI</a>
-        <a class="nav-link active " aria-current="page" href="contacto.html">CONTACTO</a>
+          <a class="nav-link active me-md-5" aria-current="page" href="index.html" >HOME</a>
+        <a   class="nav-link active me-md-5" aria-current="page" href="portafolio.html">PORTAFOLIO</a>
+        <a  class="nav-link active me-md-5" aria-current="page" href="sobremi.html">SOBRE MI</a>
+        <a id="jom" class="nav-link active " aria-current="page" href="#">CONTACTO</a>
 
       </div>
 
@@ -180,47 +175,54 @@ html,body {
 
 
 
+<form action="" method="post" class="" >
 
-<div id="contenedor" class="container text-center" >
+<div id="formulario" class="container text-center text-white ">
 
-	<a href="index.php">Entrar</a>
+  <h1 id="ct" class="mb-4">Contacto:</h1>
+
+
+  <div id="dentro" class="container ">
+
+    <div class="row">
+      
+      <div class="col-12 col-md-6">
+
+        <div class="mb-3 ">
+  <label for="exampleFormControlInput0" class="form-label ">Nombre:</label>
+  <input required type="text" class="form-control" id="exampleFormControlInput0" placeholder="Nombre">
+</div>
+
+</div>
+      <div class="col -12 col-md-6"><div class="mb-3 ">
+  <label for="exampleFormControlInput1" class="form-label ">Correo Electronico:</label>
+  <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div></div>
+
+
+    </div>
+    
+      
 
 
 
-	<h3 id="uno" class="" mb-0 style="color: white; font-family: fuente4; font-size: 1.6rem;">Bienvenido</h3>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea2" class="form-label">Asunto:</label>
+  <textarea class="form-control " id="exampleFormControlTextarea2" rows="1"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
 
-	<h1 id="ray" class="mt-0" style="">Ray Lara</h1>
-
-	<h3 id="uno"  mb-0 style="color: white; font-family: fuente4; font-size: 1.3rem;">Programador JR</h3>
-
+<button  type="submit" class="btn border mt-3 text-white">Enviar mensaje</button>
 
 </div>
 
+  </div>
 
-
-
-<footer id="pie">
-
-
-	<span style="font-size: 1rem;">
-    <span style="color: white;">
-    <a class="me-2" href="https://github.com/Mrlatosta/"><i class="fa-brands fa-github fa-bounce fa-xl"></i></a>
-    </span>
-  </span>
-
-
-	<span style="font-size: 1rem;">
-    <span style="color: white;">
-    <a  href="https://instagram.com/_raylara._"><i class="fa-brands fa-instagram fa-bounce fa-xl"></i></a>
-    </span>
-  </span>
-
-
+  </form>
   
-
-
-</footer>
-
 
 
 
@@ -228,6 +230,11 @@ html,body {
 
 
   
+
+
+        
+
+
 
 
 
