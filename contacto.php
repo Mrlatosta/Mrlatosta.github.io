@@ -175,7 +175,7 @@
 
 
 
-<form action="" method="post" class="" >
+<form action="enviarEmail.php" method="post" class="" >
 
 <div id="formulario" class="container text-center text-white ">
 
@@ -190,13 +190,13 @@
 
         <div class="mb-3 ">
   <label for="exampleFormControlInput0" class="form-label ">Nombre:</label>
-  <input required type="text" class="form-control" id="exampleFormControlInput0" placeholder="Nombre">
+  <input required type="text" class="form-control" id="exampleFormControlInput0" name="nombreCliente" placeholder="Nombre">
 </div>
 
 </div>
       <div class="col -12 col-md-6"><div class="mb-3 ">
   <label for="exampleFormControlInput1" class="form-label ">Correo Electronico:</label>
-  <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <input required type="email" name="emailCliente" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div></div>
 
 
@@ -208,14 +208,14 @@
 
 <div class="mb-3">
   <label for="exampleFormControlTextarea2" class="form-label">Asunto:</label>
-  <textarea class="form-control " id="exampleFormControlTextarea2" rows="1"></textarea>
+  <textarea name="asuntoCliente" class="form-control " id="exampleFormControlTextarea2" rows="1"></textarea>
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea name="msjCliente" class="form-control" name="msjCliente" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 
-<button  type="submit" class="btn border mt-3 text-white">Enviar mensaje</button>
+<button  type="sutmit" class="btn border mt-3 text-white">Enviar mensaje</button>
 
 </div>
 

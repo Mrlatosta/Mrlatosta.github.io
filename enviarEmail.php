@@ -1,6 +1,7 @@
 <?php
 $nombreCliente = $_POST['nombreCliente'];
 $emailCliente  = $_POST['emailCliente'];
+$asuntoCliente = $_POST['asuntoCliente'];
 $msjCliente    = $_POST['msjCliente'];
 
 //Si quisieramos envie el mismo email a multiples correos
@@ -10,7 +11,7 @@ $to .= "somebody_else@example.com";
 */
 
 
-$paraCliente    = $emailCliente;
+$paraCliente    = "raymundolarasandoval@gmail.com";
 $tituloCliente  = "Mi Formulario de Contacto..";
 $mensajeCliente = "<html>".
     "<head><title>Email de Prueba</title>".
@@ -54,21 +55,17 @@ $mensajeCliente = "<html>".
         "<div class='contenedor'>".
             "<p>&nbsp;</p>" .
             "<p>&nbsp;</p>" .
-                "<span>Felicitaciones <strong class='bold'>" . $nombreCliente . " . . .!</strong></span>" .
+                "<span>Te ha contactado <strong class='bold'>" . $nombreCliente . " . . .!</strong></span>" .
                 "<p>&nbsp;</p>" .
- 			    "<p>Su formulario de Contacto funciona perfectamente...!</p> " .
+ 			    "<p>Su correo es:" . $emailCliente . "...!</p> " .
                 "<p>&nbsp;</p>" .
+                "<p>Asunto: <strong>" . $asuntoCliente . " .</strong></p>" .
                 "<p>&nbsp;</p>" .
                 "<p><strong>Mensaje: </strong> " . $msjCliente . " </p>" .
                 "<p>&nbsp;</p>" .
-        "<p>¡Gracias por suscribirse a mi Canal </p>" .
-        "<p>&nbsp;</p>" .
-        "<p><span class='bold'> Wed Developer! </span></p>" .
+        "<p><span class='bold'> Portafolio! </span></p>" .
         "<p>&nbsp;</p>" .
         "<p>".
-            "<a title='WebDeveloper' href='https://blogangular-c7858.web.app'>". 
-                "<img src='https://www.google.com/imgres?imgurl=https://yt3.ggpht.com/ytc/AAUvwnjY8Foc9Ct0-w-QRRywhm0ZpqWa311gaebiyY4y%3Ds900-c-k-c0x00ffffff-no-rj&imgrefurl=https://www.youtube.com/channel/UCodSpPp_r_QnYIQYCjlyVGA&tbnid=DVxprGL7RdZC3M&vet=1&docid=gMUhMRzL85dPqM&w=900&h=900&source=sh/x/im' alt='Logo' width='100px'/>". 
-            "</a>". 
         "</p>" .
     "</div>" .
     "</body>" .
@@ -88,6 +85,8 @@ $enviadoCliente   = mail($paraCliente, $tituloCliente, $mensajeCliente, $cabecer
     DEL MESAJE QUE ENVIAS. OJO SI EXISTE ALGUNA URL O VARIABLE QUE ESTES ENVIANDO EN EL EMAIL Y NO EXISTE O ESTA 
     INCORRECTA EL CORREO NO LLEGARA DEBES ESTA PENDIENTE EN ESTO.
 */
+
+    ?>
 
 <?php
 /*
