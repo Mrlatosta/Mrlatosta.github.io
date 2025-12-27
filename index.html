@@ -86,7 +86,7 @@
         <i class="bi bi-briefcase-fill me-2"></i>Ver Proyectos
       </a>
       <a href="#contact" class="btn btn-outline-light btn-lg mb-2">
-        <i class="bi bi-envelope-fill me-2"></i>Contactar
+        <i class="bi bi-envelope-fill me-2"></i>Contáctame
       </a>
     </div>
   </div>
@@ -429,71 +429,67 @@
 
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
-        <form id="contact-form" class="contact-form needs-validation" novalidate>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xykykavo" method="POST">
           
           <div class="row g-4">
             <!-- Nombre -->
             <div class="col-12 col-md-6">
-              <label for="nombreCliente" class="form-label text-white">
+              <label for="name" class="form-label text-white">
                 <i class="bi bi-person-fill me-2"></i>Nombre
               </label>
               <input 
                 required 
                 type="text" 
                 class="form-control" 
-                id="nombreCliente" 
-                name="nombreCliente" 
+                id="name" 
+                name="name" 
                 placeholder="Tu nombre completo"
                 minlength="2">
-              <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
             </div>
 
             <!-- Email -->
             <div class="col-12 col-md-6">
-              <label for="emailCliente" class="form-label text-white">
+              <label for="email" class="form-label text-white">
                 <i class="bi bi-envelope-fill me-2"></i>Correo Electrónico
               </label>
               <input 
                 required 
                 type="email" 
-                name="emailCliente" 
+                name="email" 
                 class="form-control" 
-                id="emailCliente" 
+                id="email" 
                 placeholder="nombre@ejemplo.com">
-              <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
             </div>
           </div>
 
           <!-- Asunto -->
           <div class="mt-4">
-            <label for="asuntoCliente" class="form-label text-white">
+            <label for="subject" class="form-label text-white">
               <i class="bi bi-tag-fill me-2"></i>Asunto
             </label>
             <input 
               required 
               type="text" 
-              name="asuntoCliente" 
+              name="subject" 
               class="form-control" 
-              id="asuntoCliente" 
+              id="subject" 
               placeholder="Asunto de tu mensaje"
               minlength="3">
-            <div class="invalid-feedback">Por favor ingresa un asunto.</div>
           </div>
 
           <!-- Mensaje -->
           <div class="mt-4">
-            <label for="msjCliente" class="form-label text-white">
+            <label for="message" class="form-label text-white">
               <i class="bi bi-chat-dots-fill me-2"></i>Mensaje
             </label>
             <textarea 
               required 
-              name="msjCliente" 
+              name="message" 
               class="form-control" 
-              id="msjCliente" 
+              id="message" 
               rows="5" 
               placeholder="Escribe tu mensaje aquí..."
               minlength="10"></textarea>
-            <div class="invalid-feedback">Por favor escribe un mensaje (mínimo 10 caracteres).</div>
           </div>
 
           <!-- Botón Enviar -->
@@ -564,37 +560,71 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Validación de formulario
+// Validación y envío de formulario con Formspree
 const form = document.getElementById('contact-form');
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  if (this.checkValidity()) {
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
+const messageDiv = document.getElementById('form-message');
+
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
     
+    const submitBtn = this.querySelector('button[type="submit"]');
+    
+    // Mostrar spinner
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Enviando...';
     
-    setTimeout(() => {
-      const messageDiv = document.getElementById('form-message');
+    // Usar fetch para enviar el formulario
+    fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Éxito - Mostrar mensaje y recargar
+        messageDiv.innerHTML = `
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            ¡Mensaje enviado con éxito! Recargando página...
+          </div>
+        `;
+        // Recargar la página después de 1.5 segundos
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
+      } else {
+        // Error
+        messageDiv.innerHTML = `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            Hubo un error al enviar el mensaje. Recargando...
+          </div>
+        `;
+        // Recargar en caso de error también
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      }
+    })
+    .catch(error => {
+      // Error de conexión
+      console.error('Error:', error);
       messageDiv.innerHTML = `
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-          <i class="bi bi-check-circle-fill me-2"></i>
-          ¡Mensaje enviado con éxito! Te responderé pronto.
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          Error de conexión. Recargando página...
         </div>
       `;
-      
-      this.reset();
-      this.classList.remove('was-validated');
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-    }, 2000);
-  }
-  
-  this.classList.add('was-validated');
-});
+      // Recargar después de mostrar el error
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    });
+  });
+}
 </script>
 
   </body>

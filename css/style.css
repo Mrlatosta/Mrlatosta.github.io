@@ -469,14 +469,6 @@ body::before {
     top: 0;
 }
 
-/* ====================================
-   Dark Mode Support (opcional)
-   ==================================== */
-@media (prefers-color-scheme: dark) {
-    body {
-        /* Ya está en modo oscuro por defecto */
-    }
-}
 
 /* ====================================
    Loading Animation
