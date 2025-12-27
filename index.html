@@ -99,11 +99,17 @@
       <h2 class="section-title">Portafolio</h2>
       <h3 class="section-subtitle">Proyectos Web</h3>
       <div class="title-underline mx-auto"></div>
+      <p class="text-center text-light mt-3 mb-0">
+        <i class="bi bi-cursor-fill me-2"></i>
+        <span class="badge bg-success pulse-animation">Haz clic en los logos para ver más</span>
+      </p>
     </div>
+
 
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <div class="row g-3 justify-content-center">
+
           
           <!-- Proyecto 1: The Clip Web -->
           <div class="col-6 col-md-4 d-flex">
@@ -166,7 +172,7 @@
                   <img class="logos" src="https://grupolesaa.com.mx/img/logoblanco.png" alt="Logo Grupo Lesa" loading="lazy">
                 </button>
               </a>
-              <h4 class="mt-3 text-white project-title">Grupo Lesa</h4>
+              <h4 class="mt-3 text-white project-title">Grupo LESAA</h4>
             </div>
           </div>
 
@@ -183,6 +189,25 @@
                 </button>
               </a>
               <h4 class="mt-3 text-white project-title">Mercadito NL</h4>
+            </div>
+          </div>
+
+          <!-- Proyecto 7: BIOLAB -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#biolabModal" aria-label="Ver proyecto BIOLAB">
+                <button type="button" class="project-btn" style="background: linear-gradient(135deg, #1a4d5e 0%, #2a7d8f 100%);">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4C5 2.89543 5.89543 2 7 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 6H15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M9 10H15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M9 14H13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="18" r="1.5" fill="white"/>
+                  </svg>
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">BIOLAB</h4>
+              <p class="text-light small mb-0">Laravel + Vue.js</p>
             </div>
           </div>
 
@@ -205,7 +230,32 @@
       <div class="col-12 col-lg-10">
         <div class="row g-4">
           
-          <!-- Proyecto de Datos 1 -->
+          <!-- Proyecto de Datos 1: BIOLAB System -->
+          <div class="col-12 col-md-6">
+            <div class="data-card">
+              <div class="data-card-icon">
+                <i class="bi bi-hospital-fill"></i>
+              </div>
+              <h4 class="data-card-title">Sistema BIOLAB</h4>
+              <p class="data-card-description">
+                Plataforma completa de gestión de laboratorio clínico con dashboards automatizados, reportes en tiempo real, gestión de estudios, cotizaciones y captura de resultados.
+              </p>
+              <div class="data-card-tags">
+                <span class="badge bg-danger">Laravel</span>
+                <span class="badge bg-success">Vue.js</span>
+                <span class="badge bg-primary">MySQL</span>
+                <span class="badge bg-info">Chart.js</span>
+              </div>
+              <div class="mt-3">
+                <small class="text-light d-block mb-2"><i class="bi bi-check-circle-fill me-1"></i> Dashboard de análisis con métricas en tiempo real</small>
+                <small class="text-light d-block mb-2"><i class="bi bi-check-circle-fill me-1"></i> Gestión completa de estudios clínicos</small>
+                <small class="text-light d-block mb-2"><i class="bi bi-check-circle-fill me-1"></i> Sistema de cotizaciones automatizado</small>
+                <small class="text-light d-block"><i class="bi bi-check-circle-fill me-1"></i> Generación de reportes PDF personalizados</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto de Datos 2 -->
           <div class="col-12 col-md-6">
             <div class="data-card">
               <div class="data-card-icon">
@@ -225,8 +275,6 @@
               </a>
             </div>
           </div>
-
-          <!-- Proyecto de Datos 2 -->
           <!-- <div class="col-12 col-md-6">
             <div class="data-card">
               <div class="data-card-icon">
@@ -506,6 +554,92 @@
   </div>
 </section>
 
+<!-- MODAL BIOLAB -->
+<div class="modal fade" id="biolabModal" tabindex="-1" aria-labelledby="biolabModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content" style="background: rgba(20, 20, 40, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="biolabModalLabel">
+          <i class="bi bi-hospital-fill me-2"></i>Sistema BIOLAB - Galería
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div id="biolabCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#biolabCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Dashboard"></button>
+            <button type="button" data-bs-target="#biolabCarousel" data-bs-slide-to="1" aria-label="Gestión de Estudios"></button>
+            <button type="button" data-bs-target="#biolabCarousel" data-bs-slide-to="2" aria-label="Captura de Resultados"></button>
+            <button type="button" data-bs-target="#biolabCarousel" data-bs-slide-to="3" aria-label="Cotizaciones"></button>
+            <button type="button" data-bs-target="#biolabCarousel" data-bs-slide-to="4" aria-label="Lista de Reportes"></button>
+            <button type="button" data-bs-target="#biolabCarousel" data-bs-slide-to="5" aria-label="Perfil"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/biolab/dashboard.png" class="d-block w-100" alt="Dashboard de Análisis" loading="lazy">
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 10px;">
+                <h5>Dashboard de Análisis</h5>
+                <p>Visualización de métricas en tiempo real con gráficas interactivas</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/biolab/gestion-estudios.png" class="d-block w-100" alt="Gestión de Estudios" loading="lazy">
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 10px;">
+                <h5>Gestión de Estudios Clínicos</h5>
+                <p>Creación y administración de estudios con precios y métodos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/biolab/captura-resultados.png" class="d-block w-100" alt="Captura de Resultados" loading="lazy">
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 10px;">
+                <h5>Captura de Resultados</h5>
+                <p>Sistema de ingreso de datos de pacientes y estudios realizados</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/biolab/cotizaciones.png" class="d-block w-100" alt="Cotizaciones de Estudios" loading="lazy">
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 10px;">
+                <h5>Cotizaciones de Estudios</h5>
+                <p>Generación automatizada de cotizaciones para clientes</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/biolab/lista-reportes.png" class="d-block w-100" alt="Lista de Reportes" loading="lazy">
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 10px;">
+                <h5>Lista de Reportes</h5>
+                <p>Gestión y búsqueda de reportes generados con filtros avanzados</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/biolab/perfil.png" class="d-block w-100" alt="Perfil de Usuario" loading="lazy">
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 10px;">
+                <h5>Perfil de Usuario</h5>
+                <p>Administración de cuenta y configuración de seguridad</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#biolabCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#biolabCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <div class="w-100 text-center">
+          <span class="badge bg-danger me-2">Laravel</span>
+          <span class="badge bg-success me-2">Vue.js</span>
+          <span class="badge bg-primary me-2">MySQL</span>
+          <span class="badge bg-info">Chart.js</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer class="footer-landing py-4">
   <div class="container text-center">
@@ -517,7 +651,7 @@
         <i class="fa-brands fa-instagram fa-2x"></i>
       </a>
     </div>
-    <p class="text-light mb-0">&copy; 2025 Ray Lara. Todos los derechos reservados.</p>
+    <p class="text-light mb-0">&copy; 2026 Ray Lara. Todos los derechos reservados.</p>
   </div>
 </footer>
 
