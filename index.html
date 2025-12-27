@@ -1,248 +1,601 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <!-- Required meta tags -->
+    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="">
+    <meta name="description" content="Ray Lara - Data Engineer Jr & Fullstack Developer JR. Portafolio profesional con proyectos web, habilidades y experiencia en desarrollo y análisis de datos.">
+    <meta name="keywords" content="Ray Lara, Data Engineer, Fullstack Developer, Portafolio, Desarrollo Web, Programación, Python, Java, JavaScript">
+    <meta name="author" content="Ray Lara">
+    <meta name="theme-color" content="#846565">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ray Lara - Portafolio Profesional">
+    <meta property="og:description" content="Data Engineer Jr & Fullstack Developer JR">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="imagenes/icono2.png">
 
-     <script src="scrollreveal.js"></script>
+    <!-- Preconnect para mejorar rendimiento -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link href="imagenes/icono2.png" rel="icon">
+    <link href="imagenes/icono2.png" rel="apple-touch-icon">
 
-    <script src="https://kit.fontawesome.com/89489b525d.js" crossorigin="anonymous"></script>
-	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3984910822316705"
-     crossorigin="anonymous"></script>
-
-
-     <link href="imagenes/icono2.png" rel="icon">
-
-    <title>Portafolio</title>
+    <title>Ray Lara | Data Engineer & Developer</title>
   </head>
 
-<style>
+  <body class="landing-page">
 
-html,body {
- 	height: 100%;
- 	overflow: hidden;
-	}
+<!-- Skip to main content para accesibilidad -->
+<a href="#home" class="skip-to-content">Saltar al contenido principal</a>
 
-	body{
-		height: 100%;
-        background-image: url(imagenes/imagen2.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-	}
-
-
- #nab .nav-link:hover{
-
-             color: #846565;
-             transition: all .5s;
-
-    }
-
-    #ray{
-    	color: white; 
-    	font-family: fuente3; 
-    	font-size: 9rem;
-    }
-
-    #jom{
-    	border: 1.2px solid rgba(255,255,255,0.8); 
-    	padding-left: 20px;  
-    	padding-right: 20px;
-    }
-
-	#imagen{
-
-        height: 100%;
-        
-
-
-      }
-
-      #contenedor{
-      	background-color: transparent;
-      	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-      }
-
-      #pie{
-      		top:75%;
-      		position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-      }
-
-      #pie a{
-      	color: white;
-      	text-decoration: none;
-      }
-
-        @font-face{
-
-        font-family: fuente2;
-        src: url("fuentes/candara.ttf");
-
-    }
-
-    @font-face{
-
-        font-family: fuente1;
-        src: url("fuentes/verdana.ttf");
-
-    }
-     @font-face{
-
-        font-family: fuente3;
-        src: url("fuentes/monaco.ttf");
-
-    }
-
-    @font-face{
-
-        font-family: fuente4;
-        src: url("fuentes/red.ttf");
-
-    }
-
-
-    @media only screen and (max-width: 992px) {
+<!-- Navegación Fija -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="#home" aria-label="Inicio">RL</a>
   
-      #ray{
-      	font-size: 5rem;
-      }
-      
-
-      #jom{
-      	border-width: 0px;
-      }
-
-      #pie{
-      		top:83%;
-      		
-      }
-
-        
-
-  }
-
-</style>
-
- 
-
-  <body>
-
-
-
-
-
-<div class="container ">
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-none sticky-top " id="asd" > <!--sticky-top o fixed-top -->
-  <div class="container-fluid " >
-
-    <a class="navbar-brand" href="#" > </a>
-  
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-
-      <div class="navbar-nav me-md-0 p-md-4 text-center" id="nab" style=" font-family: fuente2; font-size: .9rem;">
-
-        <a id="jom" class="nav-link active me-md-5" aria-current="page" href="index.html" >HOME</a>
-        <a class="nav-link active me-md-5" aria-current="page" href="portafolio.html">PORTAFOLIO</a>
-        <a class="nav-link active me-md-5" aria-current="page" href="sobremi.html">SOBRE MI</a>
-        <a class="nav-link active " aria-current="page" href="contacto.html">CONTACTO</a>
-
-      </div>
-
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav" id="nab">
+        <li class="nav-item">
+          <a class="nav-link me-md-3" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-md-3" href="#portfolio">PORTAFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-md-3" href="#data-projects">DATOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-md-3" href="#about">SOBRE MÍ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-md-3" href="#gallery">GALERÍA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACTO</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
-</div>
+<!-- SECCIÓN 1: HOME / HERO -->
+<section id="home" class="section-hero min-vh-100 d-flex align-items-center">
+  <div class="container text-center">
+    <h2 class="subtitle animate-on-load" style="animation-delay: 0.1s;">Bienvenido</h2>
+    <h1 id="ray" class="mt-0 animate-on-load" style="animation-delay: 0.2s;">Ray Lara</h1>
+    <p class="subtitle animate-on-load" style="animation-delay: 0.3s;">Data Engineer Jr & Fullstack Developer JR</p>
+    <div class="mt-4 animate-on-load" style="animation-delay: 0.4s;">
+      <a href="#portfolio" class="btn btn-primary btn-lg me-3 mb-2">
+        <i class="bi bi-briefcase-fill me-2"></i>Ver Proyectos
+      </a>
+      <a href="#contact" class="btn btn-outline-light btn-lg mb-2">
+        <i class="bi bi-envelope-fill me-2"></i>Contactar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 2: PORTAFOLIO -->
+<section id="portfolio" class="section-portfolio py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Portafolio</h2>
+      <h3 class="section-subtitle">Proyectos Web</h3>
+      <div class="title-underline mx-auto"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="row g-3 justify-content-center">
+          
+          <!-- Proyecto 1: The Clip Web -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="https://mrlatosta.github.io/Mrlatosta.github.io.theclipweb/" 
+                 target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto The Clip Web">
+                <button type="button" class="project-btn btn-primary">
+                  <img class="logos" src="imagenes/logotcw.png" alt="Logo The Clip Web" loading="lazy">
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">The Clip Web</h4>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Fruttopia -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="https://mrlatosta.github.io/Mrlatosta.github.io.fruttopia/" 
+                 target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Fruttopia">
+                <button type="button" class="project-btn" style="background-color: #B68510;">
+                  <img class="logos" src="imagenes/logofru.png" alt="Logo Fruttopia" loading="lazy">
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">Fruttopia</h4>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: FH Asesores -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="https://mrlatosta.github.io/Mrlatosta.github.fhasesores/" 
+                 target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto FH Asesores">
+                <button type="button" class="project-btn btn-danger">
+                  <img class="logos" src="imagenes/logofh.png" alt="Logo FH Asesores" loading="lazy">
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">FH Asesores</h4>
+            </div>
+          </div>
+
+          <!-- Proyecto 4: Landing Page -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="https://mrlatosta.github.io/Mrlatosta.github.io.landing/" 
+                 target="_blank" rel="noopener noreferrer" aria-label="Ver Landing Page">
+                <button type="button" class="project-btn" style="background-color: #102945;">
+                  <img class="logos" src="imagenes/lb.png" alt="Logo Landing Page" loading="lazy">
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">Landing Page</h4>
+            </div>
+          </div>
+
+          <!-- Proyecto 5: Grupo Lesa -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="https://grupolesaa.com.mx" 
+                 target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Grupo Lesa">
+                <button type="button" class="project-btn" style="background-color: #00396e;">
+                  <img class="logos" src="https://grupolesaa.com.mx/img/logoblanco.png" alt="Logo Grupo Lesa" loading="lazy">
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">Grupo Lesa</h4>
+            </div>
+          </div>
+
+          <!-- Proyecto 6: Mercadito NL -->
+          <div class="col-6 col-md-4 d-flex">
+            <div class="project-card w-100">
+              <a href="https://mrlatosta.github.io/ProyectoTerminal-MercaditoNL/" 
+                 target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Mercadito NL">
+                <button type="button" class="project-btn" style="background-color: #c7efc8;">
+                  <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 15.7807C40 24.4962 31.0457 22.8821 20 22.8821C8.9543 22.8821 0 24.4962 0 15.7807C0 7.06528 8.9543 0 20 0C31.0457 0 40 7.06528 40 15.7807Z" fill="#FF8E2B"></path>
+                    <rect x="2" y="26" width="36" height="12" rx="6" fill="#FF8E2B"></rect>
+                  </svg>
+                </button>
+              </a>
+              <h4 class="mt-3 text-white project-title">Mercadito NL</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: PROYECTOS DE DATOS -->
+<section id="data-projects" class="section-data-projects py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Proyectos de Datos</h2>
+      <h3 class="section-subtitle">Data Engineering & Analytics</h3>
+      <div class="title-underline mx-auto"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="row g-4">
+          
+          <!-- Proyecto de Datos 1 -->
+          <div class="col-12 col-md-6">
+            <div class="data-card">
+              <div class="data-card-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4 class="data-card-title">Dashboard de Análisis</h4>
+              <p class="data-card-description">
+                Dashboard interactivo para visualización de métricas de negocio utilizando Power BI y Python.
+              </p>
+              <div class="data-card-tags">
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-info">Power BI</span>
+                <span class="badge bg-success">SQL</span>
+              </div>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github me-1"></i>Ver Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto de Datos 2 -->
+          <!-- <div class="col-12 col-md-6">
+            <div class="data-card">
+              <div class="data-card-icon">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <h4 class="data-card-title">ETL Pipeline</h4>
+              <p class="data-card-description">
+                Pipeline automatizado de extracción, transformación y carga de datos desde múltiples fuentes.
+              </p>
+              <div class="data-card-tags">
+                <span class="badge bg-warning text-dark">Apache Airflow</span>
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-danger">PostgreSQL</span>
+              </div>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github me-1"></i>Ver Código
+              </a>
+            </div>
+          </div> -->
+
+          <!-- Proyecto de Datos 3 -->
+          <!-- <div class="col-12 col-md-6">
+            <div class="data-card">
+              <div class="data-card-icon">
+                <i class="bi bi-bar-chart-line-fill"></i>
+              </div>
+              <h4 class="data-card-title">Análisis Predictivo</h4>
+              <p class="data-card-description">
+                Modelo de machine learning para predicción de tendencias utilizando scikit-learn.
+              </p>
+              <div class="data-card-tags">
+                <span class="badge bg-success">Machine Learning</span>
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-secondary">Pandas</span>
+              </div>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github me-1"></i>Ver Código
+              </a>
+            </div>
+          </div> -->
+
+          <!-- Proyecto de Datos 4 -->
+          <!-- <div class="col-12 col-md-6">
+            <div class="data-card">
+              <div class="data-card-icon">
+                <i class="bi bi-cloud-arrow-up-fill"></i>
+              </div>
+              <h4 class="data-card-title">Data Warehouse</h4>
+              <p class="data-card-description">
+                Diseño e implementación de data warehouse en la nube para almacenamiento escalable.
+              </p>
+              <div class="data-card-tags">
+                <span class="badge bg-info">AWS</span>
+                <span class="badge bg-primary">Redshift</span>
+                <span class="badge bg-success">S3</span>
+              </div>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github me-1"></i>Ver Código
+              </a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 4: SOBRE MÍ -->
+<section id="about" class="section-about py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="title-underline mx-auto"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <div class="mb-4">
+          <img src="imagenes/foto.jpeg" id="imagenray" alt="Foto de Ray Lara" loading="lazy">
+        </div>
+        
+        <h3 class="text-white mb-3">Ray Lara</h3>
+        
+        <p class="text-light mb-4" style="font-size: 1.1rem;">
+          Estudiante de ingeniería en datos y Desarrollador Fullstack Jr<br>
+          Amante de los datos y la programación
+        </p>
+
+        <!-- Habilidades -->
+        <div class="skill-section mt-5">
+          <h4 class="h5 mb-4 text-white">Mis Habilidades</h4>
+          
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-white">Diseño Web</span>
+                  <span class="text-white">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                       role="progressbar" style="width: 90%" aria-valuenow="90" 
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-white">Android</span>
+                  <span class="text-white">60%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
+                       role="progressbar" style="width: 60%" aria-valuenow="60" 
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-white">Data Engineering</span>
+                  <span class="text-white">60%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" 
+                       role="progressbar" style="width: 60%" aria-valuenow="60" 
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-white">Databases</span>
+                  <span class="text-white">80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" 
+                       role="progressbar" style="width: 80%" aria-valuenow="80" 
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 5: GALERÍA -->
+<section id="gallery" class="section-gallery py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Galería</h2>
+      <h3 class="section-subtitle">Capturas y Momentos</h3>
+      <div class="title-underline mx-auto"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="row g-3">
+          
+          <!-- Imagen 1 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+              <img src="imagenes/foto.jpeg" alt="Galería 1" loading="lazy">
+              <div class="gallery-overlay">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+            </div>
+          </div>
 
 
 
+         
 
-<div id="contenedor" class="container text-center" >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- SECCIÓN 6: CONTACTO -->
+<section id="contact" class="section-contact py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-subtitle text-light">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      <div class="title-underline mx-auto"></div>
+    </div>
 
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <form id="contact-form" class="contact-form needs-validation" novalidate>
+          
+          <div class="row g-4">
+            <!-- Nombre -->
+            <div class="col-12 col-md-6">
+              <label for="nombreCliente" class="form-label text-white">
+                <i class="bi bi-person-fill me-2"></i>Nombre
+              </label>
+              <input 
+                required 
+                type="text" 
+                class="form-control" 
+                id="nombreCliente" 
+                name="nombreCliente" 
+                placeholder="Tu nombre completo"
+                minlength="2">
+              <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+            </div>
 
+            <!-- Email -->
+            <div class="col-12 col-md-6">
+              <label for="emailCliente" class="form-label text-white">
+                <i class="bi bi-envelope-fill me-2"></i>Correo Electrónico
+              </label>
+              <input 
+                required 
+                type="email" 
+                name="emailCliente" 
+                class="form-control" 
+                id="emailCliente" 
+                placeholder="nombre@ejemplo.com">
+              <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+            </div>
+          </div>
 
+          <!-- Asunto -->
+          <div class="mt-4">
+            <label for="asuntoCliente" class="form-label text-white">
+              <i class="bi bi-tag-fill me-2"></i>Asunto
+            </label>
+            <input 
+              required 
+              type="text" 
+              name="asuntoCliente" 
+              class="form-control" 
+              id="asuntoCliente" 
+              placeholder="Asunto de tu mensaje"
+              minlength="3">
+            <div class="invalid-feedback">Por favor ingresa un asunto.</div>
+          </div>
 
-	<h3 id="uno" class="" mb-0 style="color: white; font-family: fuente4; font-size: 1.6rem;">Bienvenido</h3>
+          <!-- Mensaje -->
+          <div class="mt-4">
+            <label for="msjCliente" class="form-label text-white">
+              <i class="bi bi-chat-dots-fill me-2"></i>Mensaje
+            </label>
+            <textarea 
+              required 
+              name="msjCliente" 
+              class="form-control" 
+              id="msjCliente" 
+              rows="5" 
+              placeholder="Escribe tu mensaje aquí..."
+              minlength="10"></textarea>
+            <div class="invalid-feedback">Por favor escribe un mensaje (mínimo 10 caracteres).</div>
+          </div>
 
-	<h1 id="ray" class="mt-0" >Ray Lara</h1>
+          <!-- Botón Enviar -->
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-submit btn-lg px-5">
+              <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+            </button>
+          </div>
 
-	<h3 id="uno"  mb-0 style="color: white; font-family: fuente4; font-size: 1.3rem;">Data Engineer Jr & Fullstack Developer JR</h3>
+          <div id="form-message" class="mt-3"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-</div>
-
-
-
-
-<footer id="pie">
-
-
-	<span style="font-size: 1rem;">
-    <span style="color: white;">
-    <a class="me-2" href="https://github.com/Mrlatosta/"><i class="fa-brands fa-github fa-bounce fa-xl"></i></a>
-    </span>
-  </span>
-
-
-	<span style="font-size: 1rem;">
-    <span style="color: white;">
-    <a  href="https://instagram.com/_raylara._"><i class="fa-brands fa-instagram fa-bounce fa-xl"></i></a>
-    </span>
-  </span>
-
-
-  
-
-
+<!-- FOOTER -->
+<footer class="footer-landing py-4">
+  <div class="container text-center">
+    <div class="social-links mb-3">
+      <a href="https://github.com/Mrlatosta/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github fa-2x"></i>
+      </a>
+      <a href="https://instagram.com/_raylara._" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+    </div>
+    <p class="text-light mb-0">&copy; 2025 Ray Lara. Todos los derechos reservados.</p>
+  </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="scrollreveal.js" defer></script>
+<script src="index.js" defer></script>
 
+<script>
+// Smooth scroll para navegación
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Cerrar navbar en móvil
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+        bootstrap.Collapse.getInstance(navbarCollapse).hide();
+      }
+    }
+  });
+});
 
+// Activar link en navegación según scroll
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section[id]');
+  const scrollY = window.pageYOffset;
 
+  sections.forEach(section => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 100;
+    const sectionId = section.getAttribute('id');
+    const navLink = document.querySelector(`a[href="#${sectionId}"]`);
+    
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelectorAll('#nab .nav-link').forEach(link => link.classList.remove('active'));
+      if (navLink) navLink.classList.add('active');
+    }
+  });
+});
 
-
-
+// Validación de formulario
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
   
+  if (this.checkValidity()) {
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Enviando...';
+    
+    setTimeout(() => {
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.innerHTML = `
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          ¡Mensaje enviado con éxito! Te responderé pronto.
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+      `;
+      
+      this.reset();
+      this.classList.remove('was-validated');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+    }, 2000);
+  }
+  
+  this.classList.add('was-validated');
+});
+</script>
 
-
-
-
-
-
-    <script src="index.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
- 
   </body>
-
-
 </html>
